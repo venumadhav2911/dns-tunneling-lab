@@ -1,0 +1,2 @@
+alert udp any any -> any 53 (msg:"Possible DNS Tunneling Detected"; content:"|00|"; depth:1; dsize:>100; sid:1000001; rev:1;)
+
